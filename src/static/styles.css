@@ -101,10 +101,39 @@ section h3 {
   font-size: 14px;
   color: #555;
   border-left: 3px solid #1a237e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .participants-list li:last-child {
   margin-bottom: 0;
+}
+
+.delete-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
 }
 
 .no-participants {
